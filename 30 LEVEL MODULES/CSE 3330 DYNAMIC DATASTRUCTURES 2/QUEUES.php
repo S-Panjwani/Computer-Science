@@ -1,12 +1,13 @@
 <?php
-$person = array(
-    "name" => "John",
-    "age" => 30,
-    "city" => "New York"
-);
+// Code comments.
 
-// Accessing values using keys
-echo $person["name"]; // Outputs: John
-echo $person["age"];  // Outputs: 30
+// make an empty array
+$queue = array();
 
+// php has cool stuff, array_push, and array_shift
+array_push($queue, "first");
+array_push($queue, "second");
+
+
+print_r($queue); // Can print all at once, 10x easier than lua.
 ?>
