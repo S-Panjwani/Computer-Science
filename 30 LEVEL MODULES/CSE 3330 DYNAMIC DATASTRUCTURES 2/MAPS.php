@@ -9,4 +9,14 @@ $person = array(
 echo "Name: " . $person["name"] . "\n"; // the "/n" is to make it go to the next line
 echo "Age: " . $person["age"] . "\n";
 echo "City: " . $person["city"] . "\n";
+echo "--------------------------------------";
+
+$map_copy = $person;
+$deep_copy = json_decode(json_encode($person), true);  
+
+
+print_r($map_copy);
+print_r($deep_copy);
+
 ?>
+
